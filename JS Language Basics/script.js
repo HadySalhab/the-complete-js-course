@@ -1,57 +1,81 @@
-// console.log("Hello World !!!");
+// // console.log("Hello World !!!");
+
+// // var firstName = "John";
+// // console.log(firstName);
+
+// // var lastName = "Doe";
+
+// // var age = 25;
+
+// // var fullAge = true;
+
+// // console.log(fullAge);
+
+// // var job;
+// // console.log(job);
+
+// // job = "teacher";
+// // console.log(job);
+
+// //NUll means non-existent
+// //Undefined means that the variable does not have a value yet
+// //variables cannot start with numbers, they should start either with $ sign , character or underscore
 
 // var firstName = "John";
-// console.log(firstName);
+// var age = 28;
 
-// var lastName = "Doe";
+// //javascript automatically convert age to string (type coersion)
+// console.log(firstName + " " + age);
 
-// var age = 25;
-
-// var fullAge = true;
-
-// console.log(fullAge);
-
-// var job;
-// console.log(job);
-
+// var job, isMarried;
 // job = "teacher";
-// console.log(job);
+// isMarried = false;
+// console.log(
+//   firstName +
+//     " is a " +
+//     age +
+//     " year old " +
+//     job +
+//     ". Is he married? " +
+//     isMarried
+// );
 
-//NUll means non-existent
-//Undefined means that the variable does not have a value yet
-//variables cannot start with numbers, they should start either with $ sign , character or underscore
+// //Variable mutation
+// age = "twenty eight"; //js is dynamic type language
+// job = "driver";
+// alert(
+//   firstName +
+//     " is a " +
+//     age +
+//     " year old " +
+//     job +
+//     ". Is he married? " +
+//     isMarried
+// );
 
-var firstName = "John";
-var age = 28;
+// var lastName = prompt("What is his last name?");
+// console.log(firstName + " " + lastName);
 
-//javascript automatically convert age to string (type coersion)
-console.log(firstName + " " + age);
+var now, yearJohn, yearMark;
+now = 2020;
+ageMark = 33;
+ageJohn = 28;
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
 
-var job, isMarried;
-job = "teacher";
-isMarried = false;
-console.log(
-  firstName +
-    " is a " +
-    age +
-    " year old " +
-    job +
-    ". Is he married? " +
-    isMarried
-);
+//Math Operators
+console.log(yearJohn);
+console.log(now + 2);
+console.log(now - 2);
+console.log(now / 2);
+console.log(now * 2);
+console.log(now % 2);
 
-//Variable mutation
-age = "twenty eight"; //js is dynamic type language
-job = "driver";
-alert(
-  firstName +
-    " is a " +
-    age +
-    " year old " +
-    job +
-    ". Is he married? " +
-    isMarried
-);
+//Logical operators
+var johnOlder = ageJohn > ageMark;
+console.log(johnOlder);
 
-var lastName = prompt("What is his last name?");
-console.log(firstName + " " + lastName);
+//typeOf operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof "Mark is older than John");
