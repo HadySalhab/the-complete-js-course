@@ -11,8 +11,8 @@ if (height || height === 0) {
   console.log("Variable has not been defined");
 }
 
-// ==  type coersion, they are equal even if their type does not match
-// === their value and type must be equal
+// ==  type coersion, they are equal even if their type does not match , of course their value must match
+// === their value and type must be equal (preferable way)
 
 if (height == "23") {
   console.log("the == operator does type coersion");
