@@ -24,7 +24,9 @@ console.log(john.gender); //undefined
 
 //second way to declare an object
 var jane = new Object();
-jane.firstName = "Jane"; //assigning jane value to firstName key
-jane.birthYear = 1969;
-jane["lastName"] = "Smith"; //assigning Smith value to lastName key
+jane.firstName = "Jane"; //assigning jane value to firstName key , will be created at runtime.
+jane.birthYear = 1969; // will be created at runtime.
+jane["lastName"] = "Smith"; //assigning Smith value to lastName key , will be created at runtime.
 console.log(jane);
+
+//Object properties can be created at runtime ( the key and its value)
