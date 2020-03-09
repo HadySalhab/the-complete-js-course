@@ -40,8 +40,11 @@ var markSpending = {
 johnSpending.spendingCalc();
 markSpending.spendingCalc();
 
-johnSpending.paidTipAverage = calcPaidTipAverage(johnSpending.paidTip); //creating paidTipAvg key @runTime
-markSpending.paidTipAverage = calcPaidTipAverage(markSpending.paidTip); //creating paidTipAvg key @runTime
+
+
+//even if paidTipAverage does not exist in the object, it will be created at runtime.
+johnSpending.paidTipAverage = calcPaidTipAverage(johnSpending.paidTip); 
+markSpending.paidTipAverage = calcPaidTipAverage(markSpending.paidTip); 
 
 console.log(johnSpending);
 console.log(markSpending);
