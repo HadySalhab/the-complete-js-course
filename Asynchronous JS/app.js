@@ -95,14 +95,17 @@ const getRelated = publisher => {
 
 //Consumtion with promises
 getIdsPromise()
+  //data is the return promise from getIdsPromise
   .then(data => {
     console.log(data);
-    return getRecipe(data);
+    return getRecipe(data); //return new promise
   })
+  //recipeDetail is the return promise from getRecipe
   .then(recipeDetail => {
     console.log(recipeDetail);
     return getRelated(recipeDetail);
   })
+  //recipe is the return promise from getRelated
   .then(recipe => console.log(recipe))
   .catch(err => console.log(err));
 
